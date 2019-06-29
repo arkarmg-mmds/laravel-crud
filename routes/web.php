@@ -21,8 +21,8 @@ Route::get('/', function () {
 
     return view('home',[
         'tasks' => $tasks,
-        // 'data' => 'SkyRide'
-        'data' => request('title')
+        'data' => 'SkyRide'
+        // 'data' => request('title')
     ]);
 });
 
