@@ -11,36 +11,17 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'PageController@home');
 
-    // $tasks = [
-    //     'Go to the school',
-    //     'Go to the market',
-    //     'Go to the work'
-    // ];
+Route::get('/contact', 'PageController@contact');
 
-    // $businessname = "SkyRide";
+Route::get('/about', 'PageController@about');
 
-    // return view('home',[
-    //     'tasks' => $tasks,
-    //     // 'data' => 'SkyRide'
-    //     // 'data' => request('title')
-    //     'data' => '<script>alert("SkyRide")</script>'
-    // ]);
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
 
-    // return view('home')->withTasks($tasks)->withBusinessname('SkyRide');
-
-    return view('home')->with([
-        'businessname' => 'SkyRide',
-        'tasks' => ['Yangon Tour','Mandalay Tour','Beach Tour']
-    ]);
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
+// Route::get('/about', function () {
+//     return view('about');
+// });
 
