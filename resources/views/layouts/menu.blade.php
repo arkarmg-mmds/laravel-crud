@@ -12,6 +12,9 @@
         </a>
     </li>
     <li>
+        <a href="/projects/create">Create Project</a>
+    </li>
+    <li>
         <a href="/about">
             About
         </a>
