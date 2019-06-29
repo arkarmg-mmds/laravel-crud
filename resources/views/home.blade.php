@@ -5,7 +5,9 @@
 @section('content')
 
     <h1>
-        {{$data}} Travel & Tour Home Page
+        {{$businessname}} Travel & Tour Home Page
+
+        {{-- {!! $data !!} Travel & Tour Home Page --}}
     </h1>
 
     <ul>
