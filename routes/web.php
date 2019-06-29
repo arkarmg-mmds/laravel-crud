@@ -13,16 +13,26 @@
 
 Route::get('/', function () {
 
-    $tasks = [
-        'Go to the school',
-        'Go to the market',
-        'Go to the work'
-    ];
+    // $tasks = [
+    //     'Go to the school',
+    //     'Go to the market',
+    //     'Go to the work'
+    // ];
 
-    return view('home',[
-        'tasks' => $tasks,
-        'data' => 'SkyRide'
-        // 'data' => request('title')
+    // $businessname = "SkyRide";
+
+    // return view('home',[
+    //     'tasks' => $tasks,
+    //     // 'data' => 'SkyRide'
+    //     // 'data' => request('title')
+    //     'data' => '<script>alert("SkyRide")</script>'
+    // ]);
+
+    // return view('home')->withTasks($tasks)->withBusinessname('SkyRide');
+
+    return view('home')->with([
+        'businessname' => 'SkyRide',
+        'tasks' => ['Yangon Tour','Mandalay Tour','Beach Tour']
     ]);
 });
 
